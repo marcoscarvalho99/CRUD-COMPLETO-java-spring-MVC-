@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>editar</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/salvar}" method="post" th:object="${produto}">
+  id = <input type="text" th:field="*{id}" already/>  <br/>
+  nome = <input type="text" th:field="${produto.nome}"/> <br/>
+  categoria= <input type="text" th:field="${produto.categoria}"> <br/>
+  validade= <input type="text" th:field="${produto.validade}"> <br/>
+
+  <button type="submit">Salvar</button>
+
+</form>
+
+</body>
+</html>
